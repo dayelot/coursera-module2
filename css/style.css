@@ -8,14 +8,15 @@
 /* -- General CSS -- */
 
 :root{
-    size: 10px;
+    font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 
     /* Just adding a few colors that I might want to change quickly */
     --bg-color: rgb(255, 232, 181);
     --primary: rgb(52, 0, 36);
     --secondary: rgb(254, 227, 109);
-    --third: rgb(236, 208, 79);
+    --shadow1: rgb(236, 208, 79);
+    --shadow2: rgb(67, 35, 0);
 }
 
 *{
@@ -33,6 +34,15 @@ body{
     but I believe it's necessary for scaling */
 .row{
     width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Getting images to resize, used for testing */
@@ -57,6 +67,7 @@ img.fluid{
     .col-sm-12{
         float: left;
         padding:1rem;
+        position: relative;
     }
 
     .col-sm-1{
@@ -114,6 +125,7 @@ img.fluid{
     .col-md-12{
         float: left;
         padding:1rem;
+        position: relative;
     }
 
     .col-md-1{
@@ -171,6 +183,7 @@ img.fluid{
     .col-lg-12{
         float: left;
         padding:1rem;
+        position: relative;
     }
 
     /*  I wanted to try and do what Bootstrap does
@@ -234,22 +247,33 @@ h1.main-heading{
 /* Trying to make a banner at the top, playing around */
 img.banner{
     width:100vw;
+    height: 3rem;
     border-bottom: .5rem solid var(--primary);
 }
 
+/* Styling for food cards */
 .food{
     background-color: var(--secondary);
     border: .2rem solid var(--primary);
     border-radius: 1rem;
-    padding: .5rem;
 }
+/* Styling for food-heading, etc.. */
 h2.food-heading{
-    padding: .5rem;
-    text-align: right;
+    position: relative;
+    padding: .3rem;
+    background-color: var(--shadow1);
+    margin: -.2rem -.2rem 1rem 0;
+    float: right;
+    border-radius: 0 1rem;
+    border: .2rem solid var(--primary);
 }
+/* Styling for food text (alt colors) */
 p.food-text{
-    padding: 1rem;
+    background-color: var(--primary);
+    color: var(--bg-color);
+    padding: .9rem;
+    margin: 1rem;
     text-align: justify;
     border-radius: 1rem;
-    background-color: var(--third);
+    clear:right
 }
