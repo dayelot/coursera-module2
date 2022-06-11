@@ -262,10 +262,11 @@ h2.food-heading{
     position: relative;
     padding: .3rem;
     background-color: var(--shadow1);
-    margin: -.2rem -.2rem 1rem 0;
+    margin-bottom: 1rem;
     float: right;
     border-radius: 0 1rem;
-    border: .2rem solid var(--primary);
+    border-left: .2rem solid var(--primary);
+    border-bottom: .2rem solid var(--primary);
 }
 /* Styling for food text (alt colors) */
 p.food-text{
