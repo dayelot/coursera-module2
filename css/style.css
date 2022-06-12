@@ -278,3 +278,14 @@ p.food-text{
     border-radius: 1rem;
     clear:right
 }
+
+/* Unique colors for each section */
+#foodcol1{
+    background-color: rgb(255, 114, 171);
+}
+#foodcol2{
+    background-color: rgb(255, 182, 108);
+}
+#foodcol3{
+    background-color: rgb(250, 252, 112);
+}
